@@ -7,6 +7,12 @@
   revision = "975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e"
 
 [[projects]]
+  name = "github.com/k8s-community/k8sapp"
+  packages = ["pkg/config","pkg/handlers","pkg/logger","pkg/logger/standard","pkg/router","pkg/router/bitroute","pkg/service","pkg/system","pkg/version"]
+  revision = "d331868fe44c74fa6213762e73880f57d0d08570"
+  version = "0.4.7"
+
+[[projects]]
   name = "github.com/kelseyhightower/envconfig"
   packages = ["."]
   revision = "462fda1f11d8cad3660e52737b8beefd27acfb3f"
@@ -55,6 +61,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "50b849e8f701835f4e407f5ad97b07077a8aaca52f70021e142ad327b608e22c"
+  inputs-digest = "5d1c3eb966650feba9781320aaa8f53db84b04b6425ec112d360e8e54969aadd"
   solver-name = "gps-cdcl"
   solver-version = 1

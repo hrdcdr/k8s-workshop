@@ -2,8 +2,8 @@
 # Use of this source code is governed by a MIT-style
 # license that can be found in the LICENSE file.
 
-APP?=k8sapp
-PROJECT?=github.com/k8s-community/${APP}
+APP?=k8s-workshop
+PROJECT?=github.com/hrdcdr/${APP}
 REGISTRY?=registry.k8s.community
 CA_DIR?=certs
 
