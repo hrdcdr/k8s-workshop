@@ -1,0 +1,10 @@
+name: k8sapp
+description: A Helm charts for Kubernetes application
+version: 0.4.7
+home: https://k8s.community/
+sources:
+  - https://github.com/k8s-community/k8sapp
+maintainers:
+  - name: Kubernetes Community Authors
+    email: k8s.community@gmail.com
+engine: gotpl
