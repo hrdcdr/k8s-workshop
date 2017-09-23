@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/k8s-community/k8sapp/pkg/config"
-	"github.com/k8s-community/k8sapp/pkg/logger"
-	"github.com/k8s-community/k8sapp/pkg/logger/standard"
-	"github.com/k8s-community/k8sapp/pkg/router/bitroute"
+	"github.com/hrdcdr/k8s-workshop/pkg/config"
+	"github.com/hrdcdr/k8s-workshop/pkg/logger"
+	"github.com/hrdcdr/k8s-workshop/pkg/logger/standard"
+	"github.com/hrdcdr/k8s-workshop/pkg/router/bitroute"
 )
 
 func TestHealth(t *testing.T) {

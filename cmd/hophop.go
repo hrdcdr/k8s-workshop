@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/k8s-community/k8sapp/pkg/config"
-	"github.com/k8s-community/k8sapp/pkg/service"
-	"github.com/k8s-community/k8sapp/pkg/system"
+	"github.com/hrdcdr/k8s-workshop/pkg/config"
+	"github.com/hrdcdr/k8s-workshop/pkg/service"
+	"github.com/hrdcdr/k8s-workshop/pkg/system"
 )
 
 func main() {

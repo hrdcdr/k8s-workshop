@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/k8s-community/k8sapp/pkg/router"
+	"github.com/hrdcdr/k8s-workshop/pkg/router"
 )
 
 type control struct {
@@ -84,7 +84,7 @@ func (c *control) GetCode() int {
 // Body writes prepared header, status code and body data into http output.
 // It is equal to using sequence of http.ResponseWriter methods:
 // WriteHeader(code int) and Write(b []byte) int, error
-func (c *control) Body(data interface{}) {
+func (c *control) Body(data interface{}) {	
 	var content []byte
 
 	if str, ok := data.(string); ok {

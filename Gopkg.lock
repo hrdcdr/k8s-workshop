@@ -7,15 +7,9 @@
   revision = "975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e"
 
 [[projects]]
-  name = "github.com/k8s-community/k8sapp"
-  packages = ["pkg/config","pkg/handlers","pkg/logger","pkg/logger/standard","pkg/router","pkg/router/bitroute","pkg/service","pkg/system","pkg/version"]
-  revision = "d331868fe44c74fa6213762e73880f57d0d08570"
-  version = "0.4.7"
-
-[[projects]]
   name = "github.com/kelseyhightower/envconfig"
   packages = ["."]
-  revision = "462fda1f11d8cad3660e52737b8beefd27acfb3f"
+  revision = "70f0258d44cbaa3b6a2581d82f58da01a38e4de4"
 
 [[projects]]
   name = "github.com/rs/xhandler"
@@ -44,23 +38,23 @@
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
-  revision = "7d9177d70076375b9a59c8fde23d52d9c4a7ecd5"
+  revision = "81e90905daefcd6fd217b62423c0908922eadb30"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
   packages = ["context"]
-  revision = "8351a756f30f1297fe94bbf4b767ec589c6ea6d0"
+  revision = "66aacef3dd8a676686c7ae3716979581e8b03c47"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix","windows"]
-  revision = "b6e1ae21643682ce023deb8d152024597b0e9bb4"
+  revision = "7ddbeae9ae08c6a06a59597f0c9edbc5ff2444ce"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "5d1c3eb966650feba9781320aaa8f53db84b04b6425ec112d360e8e54969aadd"
+  inputs-digest = "e59ccb0cbb49d6ee79d6526fbc5be075343a1f24c46c3aa2c74d1e6c89f09ece"
   solver-name = "gps-cdcl"
   solver-version = 1

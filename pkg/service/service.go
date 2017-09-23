@@ -7,13 +7,13 @@ package service
 import (
 	"net/http"
 
-	"github.com/k8s-community/k8sapp/pkg/config"
-	"github.com/k8s-community/k8sapp/pkg/handlers"
-	"github.com/k8s-community/k8sapp/pkg/logger"
-	stdlog "github.com/k8s-community/k8sapp/pkg/logger/standard"
-	"github.com/k8s-community/k8sapp/pkg/router"
-	"github.com/k8s-community/k8sapp/pkg/router/bitroute"
-	"github.com/k8s-community/k8sapp/pkg/version"
+	"github.com/hrdcdr/k8s-workshop/pkg/config"
+	"github.com/hrdcdr/k8s-workshop/pkg/handlers"
+	"github.com/hrdcdr/k8s-workshop/pkg/logger"
+	stdlog "github.com/hrdcdr/k8s-workshop/pkg/logger/standard"
+	"github.com/hrdcdr/k8s-workshop/pkg/router"
+	"github.com/hrdcdr/k8s-workshop/pkg/router/bitroute"
+	"github.com/hrdcdr/k8s-workshop/pkg/version"
 )
 
 // Setup configures the service

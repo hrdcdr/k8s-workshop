@@ -7,7 +7,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/k8s-community/k8sapp/pkg/router"
+	"github.com/hrdcdr/k8s-workshop/pkg/router"
 )
 
 // Ready returns "OK" if service is ready to serve traffic

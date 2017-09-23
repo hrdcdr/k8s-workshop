@@ -2,25 +2,25 @@
 # Use of this source code is governed by a MIT-style
 # license that can be found in the LICENSE file.
 
-APP?=k8s-workshop
-PROJECT?=github.com/hrdcdr/${APP}
+APP?=hophop
+PROJECT=github.com/hrdcdr/k8s-workshop
 REGISTRY?=registry.k8s.community
 CA_DIR?=certs
 
 # Use the 0.0.0 tag for testing, it shouldn't clobber any release builds
-RELEASE?=0.4.7
+RELEASE?=0.0.0
 GOOS?=linux
 GOARCH?=amd64
 
-K8SAPP_LOCAL_HOST?=0.0.0.0
-K8SAPP_LOCAL_PORT?=8080
-K8SAPP_LOG_LEVEL?=0
+HOPHOP_LOCAL_HOST?=0.0.0.0
+HOPHOP_LOCAL_PORT?=8080
+HOPHOP_LOG_LEVEL?=0
 
 # Namespace: dev, prod, release, cte, username ...
 NAMESPACE?=k8s-community
 
 # Infrastructure (dev, stable, test ...) and kube-context for helm
-INFRASTRUCTURE?=stable
+INFRASTRUCTURE?=community
 KUBE_CONTEXT?=${INFRASTRUCTURE}
 VALUES?=values-${INFRASTRUCTURE}
 
@@ -69,10 +69,10 @@ push: build
 .PHONY: run
 run: build
 	@echo "+ $@"
-	@docker run --name ${CONTAINER_NAME} -p ${K8SAPP_LOCAL_PORT}:${K8SAPP_LOCAL_PORT} \
-		-e "K8SAPP_LOCAL_HOST=${K8SAPP_LOCAL_HOST}" \
-		-e "K8SAPP_LOCAL_PORT=${K8SAPP_LOCAL_PORT}" \
-		-e "K8SAPP_LOG_LEVEL=${K8SAPP_LOG_LEVEL}" \
+	@docker run --name ${CONTAINER_NAME} -p ${HOPHOP_LOCAL_PORT}:${HOPHOP_LOCAL_PORT} \
+		-e "HOPHOP_LOCAL_HOST=${HOPHOP_LOCAL_HOST}" \
+		-e "HOPHOP_LOCAL_PORT=${HOPHOP_LOCAL_PORT}" \
+		-e "HOPHOP_LOG_LEVEL=${HOPHOP_LOG_LEVEL}" \
 		-d $(CONTAINER_IMAGE):$(RELEASE)
 	@sleep 1
 	@docker logs ${CONTAINER_NAME}

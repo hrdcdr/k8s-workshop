@@ -5,13 +5,13 @@
 package config
 
 import (
-	"github.com/k8s-community/k8sapp/pkg/logger"
 	"github.com/kelseyhightower/envconfig"
+	"github.com/hrdcdr/k8s-workshop/pkg/logger"
 )
 
 const (
 	// SERVICENAME contains a service name prefix which used in ENV variables
-	SERVICENAME = "K8SAPP"
+	SERVICENAME = "HOPHOP"
 )
 
 // Config contains ENV variables

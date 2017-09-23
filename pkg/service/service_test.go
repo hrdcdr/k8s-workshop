@@ -5,9 +5,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/k8s-community/k8sapp/pkg/config"
-	"github.com/k8s-community/k8sapp/pkg/handlers"
-	"github.com/k8s-community/k8sapp/pkg/router/bitroute"
+	"github.com/hrdcdr/k8s-workshop/pkg/config"
+	"github.com/hrdcdr/k8s-workshop/pkg/handlers"
+	"github.com/hrdcdr/k8s-workshop/pkg/router/bitroute"
 )
 
 func TestSetup(t *testing.T) {

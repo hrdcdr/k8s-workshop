@@ -11,8 +11,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/k8s-community/k8sapp/pkg/router"
-	"github.com/k8s-community/k8sapp/pkg/version"
+	"github.com/hrdcdr/k8s-workshop/pkg/router"
+	"github.com/hrdcdr/k8s-workshop/pkg/version"
 )
 
 // Status contains detailed information about service

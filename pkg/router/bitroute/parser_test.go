@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/k8s-community/k8sapp/pkg/router"
+	"github.com/hrdcdr/k8s-workshop/pkg/router"
 )
 
 type registered struct {

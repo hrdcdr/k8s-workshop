@@ -7,7 +7,7 @@ package logger
 import (
 	"os"
 
-	"github.com/k8s-community/k8sapp/pkg/logger"
+	"github.com/hrdcdr/k8s-workshop/pkg/logger"
 	"github.com/rs/xlog"
 )
 
