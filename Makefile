@@ -151,3 +151,4 @@ endif
 ifndef HAS_LINT
 	go get -u github.com/golang/lint/golint
 endif
+
